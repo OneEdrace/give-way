@@ -40,6 +40,8 @@ img { display: block; max-width: 100%; }
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
   font-family: var(--display);
   font-size: 22px;
   text-decoration: none;
@@ -51,6 +53,12 @@ img { display: block; max-width: 100%; }
 .reg { font-size: 11px; vertical-align: super; }
 
 .navbar nav { display: flex; gap: 28px; }
+
+.logo-img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
 
 .navbar nav a {
   text-decoration: none;
@@ -308,7 +316,11 @@ footer {
   font-size: 13px;
 }
 
-footer .wordmark { display: inline-block; margin-bottom: 10px; color: var(--white); }
+footer .wordmark {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--white);
+}
 
 footer p { margin-bottom: 4px; }
 
