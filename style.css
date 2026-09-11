@@ -1,0 +1,32 @@
+.contact {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #f7f6f3;
+}
+
+.contact h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+}
