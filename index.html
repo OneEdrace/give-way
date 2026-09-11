@@ -1,70 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Give Way | Streetwear Shirts</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GVWY — Give Way</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="logo">GIVE WAY</div>
-    <nav>
-      <a href="#products">Shop</a>
-      <a href="#about">About</a>
-      <a href="#contact-form">Contact</a>
-    </nav>
-  </header>
+<header class="navbar">
+  <a href="#" class="wordmark">GVWY<span class="reg">&reg;</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="navMenu">
+    <a href="#shop">Shop</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <h1>GIVE WAY</h1>
-    <p>Wear your own lane.</p>
-    <a href="#products" class="btn">Shop the Drop</a>
-  </section>
+<section class="hero">
+  <svg class="hero-star" id="heroStar" viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 0 C53 35 55 45 100 50 C55 55 53 65 50 100 C47 65 45 55 0 50 C45 45 47 35 50 0 Z" fill="#ffffff"/>
+  </svg>
+  <h1>GIVE WAY</h1>
+  <p class="tagline">Go your way.</p>
+  <a href="#shop" class="btn">Shop the drop</a>
+</section>
 
-  <section class="products" id="products">
-    <h2>Featured Shirts</h2>
-    <div class="product-grid">
+<section class="shop" id="shop">
+  <div class="section-head">
+    <h2>Featured shirts</h2>
+    <p>100% cotton. 240&ndash;260 GSM. Boxy, dropped-shoulder fit. Black or white only.</p>
+  </div>
 
-      <div class="product-card">
-        <div class="product-image">Tee 1</div>
-        <h3>Oversized Classic Tee</h3>
-        <p class="price">₱499</p>
+  <div class="product-grid">
+
+    <article class="product-card">
+      <div class="product-image">
+        <img src="images/tee-black-front.png" alt="GVWY boxy tee, black, front" onerror="this.parentElement.classList.add('img-missing')">
+        <span class="img-placeholder-label">Add images/tee-black-front.png</span>
       </div>
+      <h3>GVWY Boxy Tee — Black</h3>
+      <p class="details">Left-chest GVWY print, back road graphic</p>
+      <p class="price">&#8369;499</p>
+    </article>
 
-      <div class="product-card">
-        <div class="product-image">Tee 2</div>
-        <h3>Give Way Logo Tee</h3>
-        <p class="price">₱549</p>
+    <article class="product-card">
+      <div class="product-image">
+        <img src="images/tee-white-front.png" alt="GVWY boxy tee, white, front" onerror="this.parentElement.classList.add('img-missing')">
+        <span class="img-placeholder-label">Add images/tee-white-front.png</span>
       </div>
+      <h3>GVWY Boxy Tee — White</h3>
+      <p class="details">Left-chest GVWY print, back road graphic</p>
+      <p class="price">&#8369;499</p>
+    </article>
 
-      <div class="product-card">
-        <div class="product-image">Tee 3</div>
-        <h3>Boxy Fit Graphic Tee</h3>
-        <p class="price">₱599</p>
+    <article class="product-card">
+      <div class="product-image">
+        <img src="images/tee-back.jpg" alt="GVWY boxy tee, back print" onerror="this.parentElement.classList.add('img-missing')">
+        <span class="img-placeholder-label">Add images/tee-back.jpg</span>
       </div>
+      <h3>GVWY Road Back Print</h3>
+      <p class="details">"Give Way. Go your way." with road graphic</p>
+      <p class="price">&#8369;499</p>
+    </article>
 
+  </div>
+</section>
+
+<section class="lookbook" id="lookbook">
+  <div class="section-head">
+    <h2>Lookbook</h2>
+    <p>Front and back, black and white.</p>
+  </div>    
+  <div class="lookbook-grid">
+    <figure><img src="images/look-black-front.png" alt="Black tee front" onerror="this.parentElement.classList.add('img-missing')"><span class="img-placeholder-label">images/look-black-front.png</span><figcaption>Front</figcaption></figure>
+    <figure><img src="images/look-black-back.png" alt="Black tee back" onerror="this.parentElement.classList.add('img-missing')"><span class="img-placeholder-label">images/look-black-back.png</span><figcaption>Back</figcaption></figure>
+    <figure><img src="images/look-white-front.png" alt="White tee front" onerror="this.parentElement.classList.add('img-missing')"><span class="img-placeholder-label">images/look-white-front.png</span><figcaption>Front (white)</figcaption></figure>
+    <figure><img src="images/look-white-back.png" alt="White tee back" onerror="this.parentElement.classList.add('img-missing')"><span class="img-placeholder-label">images/look-white-back.png</span><figcaption>Back (white)</figcaption></figure>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-copy">
+      <h2>About GVWY</h2>
+      <p>Give Way started for students who wanted one shirt that works every day &mdash; heavyweight cotton, a boxy fit, no noise. No color decisions to make. Just black, white, and a shirt that lasts through the semester.</p>
+      <p class="est">GVWY &middot; EST. 2025</p>
     </div>
-  </section>
+    <ul class="specs">
+      <li><span>Fabric</span>100% cotton, premium quality</li>
+      <li><span>Weight</span>240&ndash;260 GSM, heavyweight</li>
+      <li><span>Fit</span>Boxy / crop, dropped shoulder</li>
+      <li><span>Colors</span>Black, white &mdash; only</li>
+      <li><span>Made for</span>Students, everyday wear</li>
+    </ul>
+  </div>
+</section>
 
-  <section class="about" id="about">
-    <h2>About Give Way</h2>
-    <p>Give Way is a streetwear brand built for people who move at their own pace. Every piece is designed with a boxy, oversized fit — clean, simple, and made to last.</p>
-  </section>
+<section class="contact" id="contact">
+  <div class="section-head">
+    <h2>Get in touch</h2>
+    <p>Questions about sizing, orders, or a bulk request for your org &mdash; send it here.</p>
+  </div>
+  <form class="contact-form" id="contactForm" novalidate>
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <span class="error" data-error-for="name"></span>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" data-error-for="email"></span>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <span class="error" data-error-for="message"></span>
+    </div>
+    <button type="submit" class="btn">Send message</button>
+    <p class="form-status" id="formStatus" role="status"></p>
+  </form>
+</section>
 
-  <section class="contact" id="contact-form">
-    <h2>Get in Touch</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+<footer>
+  <div class="wordmark small">GVWY<span class="reg">&reg;</span></div>
+  <p>Give Way &middot; Go your way.</p>
+  <p class="copyright">&copy; 2026 Give Way. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>&copy; 2026 Give Way. All rights reserved.</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
